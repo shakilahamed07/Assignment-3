@@ -7,34 +7,111 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <!-- font link -->
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <!-- font awesome link -->
     <script src="https://kit.fontawesome.com/a57cd1417a.js" crossorigin="anonymous"></script>
-
+    <style>
+        .sora-font{
+            font-family: "Sora", serif;
+        }
+    </style>
     <!-- tailwind custom code-->
     <script>
         tailwind.config = {
         theme: {
             extend: {
                 colors: {
-                'pri-color': '#546',
-                'sec-color': '#526',
+                'primary-color': '#179800',
+                'sec-color': '#EFEBE3',
                 },
-                fontFamily: {
-                    'name-font':'ddddddd',
-                }
             }
         }
         }
     </script>
 </head>
-<body>
+<body class="sora-font box-border">
     <!-- header -->
-    <header></header>
+    <header class=" bg-gradient-to-t from-[#EFEBE3] to-[#ffffff]">
+        <!-- navbar -->
+        <nav class="flex justify-center items-center max-w-[1320px] mx-auto py-6 border-b sm:border-none border-primary-color px-5 xl:px-0">
+            <!-- logo -->
+            <div class="lg:w-5/12 w-full flex justify-between">
+                <div>
+                    <img src="./c2-assets/logo-header.png" alt="">
+                </div>
+                <!-- dropdown -->
+                <div class="dropdown">
+                    <d tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <i class="fa-solid fa-bars text-[30px] text-primary-color"></i>
+                </div>
+            </div>
+
+            <!-- link and button -->
+            <div class=" flex justify-center items-center lg:w-8/12">
+                <!-- link -->
+                <div class="mr-20 hidden lg:block">
+                    <ul class="flex space-x-5 text-xl">
+                        <li class="hover:text-primary-color font-medium"><a href="#">Product</a></li>
+                        <li class="hover:text-primary-color font-medium"><a href="#">Services</a> </li>
+                        <li class="hover:text-primary-color font-medium"><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+                <!-- button -->
+                <div class="navbar-end hidden lg:flex items-center gap-4">
+                    <i class="fa-solid fa-magnifying-glass text-2xl" style="color: #000000;"></i>
+                    <i class="fa-solid fa-cart-shopping text-2xl" style="color: #000000;"></i>
+                    <button class="py-3 px-7 border border-primary-color text-xl rounded-lg hover:bg-primary-color hover:text-white">Login</button>
+                    <button class="py-3 px-7 bg-primary-color text-white text-xl rounded-lg hover:opacity-80">Register</button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="text-center sm:mt-[90px] mt-12">
+            <div class="max-w-[827px] mx-auto px-5 xl:px-0">
+                <h1 class="font-semibold lg:text-[56px] text-3xl md:text-4xl">Freshness 
+                <span class="text-primary-color">You Can</span> <br><span class="text-primary-color md:leading-normal">Count </span> On, Prices You’ll Love!</h1>
+                <p class="text-xl mt-8 mb-9">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+            </div>
+            <div class="max-w-[1031px] mx-auto">
+                <img class="mx-auto w-full animate-pulse antialiased" src="./c2-assets/hero-vegetables.png" alt="">
+            </div>
+        </div>
+    </header>
 
     <!-- main -->
-    <main></main>
+    <main>
+        <!-- services section -->
+        <section class="md:mt-[140px] mt-12 px-5 xl:px-0">
+            <div class="max-w-[1320px] mx-auto">
+                <h1 class="text-primary-color text-4xl      font-semibold mb-10">Services</h1>
+                <div class=" flex gap-6 justify-center items-center flex-wrap">
+                    <!-- card 1 -->
+                    <div class="max-w-[424px] px-8 pb-11 pt-8 bg-sec-color rounded-xl text-center">
+                        <img class="mx-auto bg-white p-6 rounded-full" src="./c2-assets/time.png" alt="">
+                        <h2 class="text-2xl font-semibold mt-6 mb-3">24/7 Services</h2>
+                        <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                    </div>
 
+                    <!-- card 2 -->
+                    <div class="max-w-[424px] px-8 pb-11 pt-8 bg-sec-color rounded-xl text-center">
+                        <img class="mx-auto bg-white p-6 rounded-full" src="./c2-assets/delivery.png" alt="">
+                        <h2 class="text-2xl font-semibold mt-6 mb-3">Fast Delivery</h2>
+                        <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                    </div>
+
+                    <!-- card 3 -->
+                    <div class="max-w-[424px] px-8 pb-11 pt-8 bg-sec-color rounded-xl text-center">
+                        <img class="mx-auto bg-white p-6 rounded-full" src="./c2-assets/healthy.png" alt="">
+                        <h2 class="text-2xl font-semibold mt-6 mb-3">Healthy Products </h2>
+                        <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
     <!-- footer -->
     <footer></footer>
 </body>
