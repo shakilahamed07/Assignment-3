@@ -30,4 +30,11 @@ Shop your daily essentials at unbeatable prices. From fresh produce to pantry st
 
 - HTML  
 - CSS  
-- Tailwind CSS  
+- Tailwind CSS
+- Javascript
+
+  ## 🛠️ Project Setup (Optional - Only if needed locally)
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/shakilahamed07/Assignment-3.git
